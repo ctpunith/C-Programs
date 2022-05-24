@@ -63,7 +63,8 @@ int string_compare(const char * dest, const char * src)                    /*str
 Example : 1 
 *********************************************************************************/
 /*
-*
+*char *str1 = "Power";  
+*char *str2 = "Power";  
 *0 The strings are equal
 */
 
@@ -71,14 +72,20 @@ Example : 1
 Example : 2 
 *********************************************************************************/
 /* Eg : 2 
-*a97 The first string is greater than the second string
+*char *str1 = "Power";  
+*char *str2 = "Powe";  
+*r114
+* The first string is greater than the second string
 */
 
 /********************************************************************************
 Example : 3
 *********************************************************************************/
 /* Eg : 3
-*t-116 The first string is smaller than the second string
+*char *str1 = "Powe";  
+*char *str2 = "Power"; 
+*r-114
+*The first string is smaller than the second string
 */
 
 
