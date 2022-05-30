@@ -3,14 +3,14 @@ count letter in string
 *********************************************************************************/
 
 #include <stdio.h>                                              /*inclusion of header file*/
-
+#include <string.h>
 int main() {                                                    /*main function*/
 
     char *s = "hello world";                                    /*intialization of string*/
     int index = 0, countIndex =0;                               /*declaration of indexes*/
     int count =0, indexFinder =0, flag =0;                      /*declaration of count and local variables*/
-    
-    for(index = 0; index < 11; index++)                         /*iterate from zero to last character*/
+    int len = strlen(s);
+    for(index = 0; index < len; index++)                         /*iterate from zero to last character*/
     {
         count=0;                                                /*counter starts at zero*/
         flag =0;                                                /*flag to hold whether character repeated or not*/
@@ -21,7 +21,7 @@ int main() {                                                    /*main function*
         }
         if(flag!=1  && (s[index] !=' '))                        /*if flag is not high and character is not a space then counter starts counting the letter*/
         {
-            for(countIndex=0; countIndex<11;countIndex++)       /*start from zeroth position till the last character*/
+            for(countIndex=0; countIndex<len;countIndex++)       /*start from zeroth position till the last character*/
             {
              
                 if( s[index] == s[countIndex] )                 /*if character matches other character then increment the counter*/  
